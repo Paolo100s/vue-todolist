@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #777;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+}
+
+.container button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+.task-container {
+    margin: 50px auto 0;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 400px;
+}
+
+.task-container ul {
+    list-style-type: none;
+}
+
+.task-container li {
+    cursor: pointer;
+}
