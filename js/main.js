@@ -24,6 +24,31 @@ createApp({
         }
     },
     methods: {
-        
+        addTask: function(){
+
+            if (this.newTask !== ""){
+                const newItem = {
+                    text: this.newTask,
+                    done: false
+                }
+
+                this.items.unshift(newItem);
+
+                this.newTask = "";
+            } 
+        },
+
+        taskDone: function(i){
+
+            if (this.items[i].done === false) {
+                this.items[i].done = true;
+            } else {
+                this.items[i].done = false;
+            }
+        },
+        removeTask: function(index){
+
+            this.items.splice(index, 1);
+        }
     }
-})
+}).mount("#app");
