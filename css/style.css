@@ -48,9 +48,10 @@ header h1 {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    border: 1px dashed blue;
+    border-bottom: 1px dashed blue;
 }
 
 .task-done {
     text-decoration: line-through;
+    color: green;
 }

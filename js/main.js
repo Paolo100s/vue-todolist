@@ -38,12 +38,12 @@ createApp({
             } 
         },
 
-        taskDone: function(i){
+        taskDone: function(index){
 
-            if (this.items[i].done === false) {
-                this.items[i].done = true;
+            if (this.items[index].done === false) {
+                this.items[index].done = true;
             } else {
-                this.items[i].done = false;
+                this.items[index].done = false;
             }
         },
         removeTask: function(index){
