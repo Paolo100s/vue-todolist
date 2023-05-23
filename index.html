@@ -33,7 +33,7 @@
                     <li v-for="(item, index) in items" :class="item.done ? task-done : ''" 
                     @click="taskDone(index)">
                         <span>{{item.text}}</span>
-                        <i class="fa-solid fa-xmark" @click.stop="removeTask"></i>
+                        <i class="fa-solid fa-xmark" @click.stop="removeTask(index)"></i>
                     </li>
                 </ul>
                 <h2 v-if="items.length === 0">Non ci sono task</h2>
